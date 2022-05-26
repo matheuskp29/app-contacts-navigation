@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button, FlatList, StyleSheet, Text, TextInput, View } from 'react-native';
+import Colors from '../const/Colors';
 
 export default function Contacts() {
     const [name, setName] = useState('');
@@ -44,6 +45,7 @@ export default function Contacts() {
                 <Button
                     disabled={name.length === 0 || telephone.length === 0}
                     title="Add contact"
+                    color={Colors.primary}
                     onPress={addContact}
                 />
             </View>

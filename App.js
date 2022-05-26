@@ -1,10 +1,6 @@
-import { Text, View } from 'react-native';
+import container from './navigation/Navigator';
 
 export default function App() {
-  return (
-    <View >
-      <Text></Text>
-    </View>
-  );
+    return container
 }
 
